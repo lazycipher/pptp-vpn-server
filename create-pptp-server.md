@@ -1,8 +1,8 @@
 # How to Create a PPTP VPN Server on Ubuntu
 
 ## Run the Following Codes in SSH
-### Step 1-
-This will install PPTPD Module
+
+###### Install pptpd module in Ubuntu Server
 
 `apt-get install pptpd`
 
@@ -28,6 +28,7 @@ nano /etc/ppp/chap-secrets
 kryptor         pptpd   xyzxyz@123              *
 
 ```
+Here Your Username is **kryptor** and Password is **xyzxyz@123**
 ###### Add DNS servers to /etc/ppp/pptpd-options
 
 ```
@@ -47,7 +48,7 @@ service pptpd restart
 ###### Setup Forwarding
 
 ```
-/etc/sysctl.conf
+nano /etc/sysctl.conf
 ```
 ###### Add the following Codes at the end of file
 ```
@@ -56,10 +57,9 @@ net.ipv4.ip_forward = 1
 ###### Create a NAT rule for iptables
 ```
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE && iptables-save
-`
-``
+```
 
 
 That's it. **You've successfully Created your own PPTP VPN Server**
 
-###### Enjoy
+#### Now  You can Login and Use your Personal
