@@ -38,6 +38,8 @@ Follow [Create-Vpn-Server.md](/Create-Vpn-Server.md)
 Download the pptp-server.sh and execute that bash script.
 It'll automatically create a PPTP Server on your VPS with some specific usernames and passwords which will be shown on Terminal.
 ```
+root@pptp-server:~#  wget https://raw.githubusercontent.com/krypt0r/pptp-vpn-server/master/pptp-server.sh
+root@pptp-server:~#  chmod 0777 pptp-server.sh
 root@pptp-server:~# ./pptp-server.sh
 ```
 ## Credits
