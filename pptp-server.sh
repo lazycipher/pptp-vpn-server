@@ -7,10 +7,10 @@ remoteip 10.0.0.100-200
 EOT
 
 sudo cat <<EOT>> /etc/ppp/chap-secrets
-user1	pptpd	user@1
-user2	pptpd	user@2
-user3	pptpd	user@3
-user4	pptpd	user@4
+user1	pptpd	user@1 *
+user2	pptpd	user@2 *
+user3	pptpd	user@3 *
+user4	pptpd	user@4 *
 EOT
 
 
