@@ -29,7 +29,13 @@ PPTP has been the subject of many security analyses and **serious security vulne
 
 ## Creating your Own PPTP VPN Server on Ubuntu.
 
+## Manual Installation
 Follow [Create-Vpn-Server.md](/Create-Vpn-Server.md)
+
+## Automatic Installation
+
+Download the pptp-server.sh and execute that bash script.
+It'll automatically create a PPTP Server on your VPS with some specific usernames and passwords which will be shown on Terminal.
 
 ## Credits
 
